@@ -8,10 +8,14 @@ result_data = {}
 
 
 def check_email(email):
+    print("printing from function "+email)
     data = email
     store = data.split("@")
+    print(f"printing data in store {store}")
     new_array = store[0].split(".")
-    if len(new_array) < 2 or len(new_array[0]) < 6:
+    print(f"printing data in new_array {new_array}")
+    print(len(new_array))
+    if len(new_array) < 2 and len(new_array[0]) < 6:
         return "Non-Human"
     else:
         return "Human"
@@ -28,8 +32,9 @@ for eachData in text.split(" "):
 for email in emails:
     occured = emails.count(email)
     email_type = check_email(email)
+    print(email)
     result_data.update({email: {"Occurrence": occured, "EmailType": email_type}})
 
 with open('result.json', 'w') as output:
-    json.dump(result_data, output, sort_keys=True, indent=4, ensure_ascii=False)
+    json.dump(result_data, output, indent=4)
     output.close()

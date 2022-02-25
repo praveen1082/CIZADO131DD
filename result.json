@@ -1,34 +1,34 @@
 {
-    "aayush@deepminds.xyz": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
+    "obs@linkedin.com": {
+        "Occurrence": 1,
+        "EmailType": "Non-Human"
     },
     "gregor@mxanalytics.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
-    },
-    "hr@vancuemonics.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
-    },
-    "info@content.linkedin.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
-    },
-    "obs@linkedin.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
-    },
-    "realtors@bbn.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
+        "Occurrence": 1,
+        "EmailType": "Human"
     },
     "susan.daniels@moo.com": {
-        "EmailType": "Non-Human",
-        "Occurrence": 1
+        "Occurrence": 1,
+        "EmailType": "Human"
+    },
+    "aayush@deepminds.xyz": {
+        "Occurrence": 1,
+        "EmailType": "Human"
+    },
+    "hr@vancuemonics.com": {
+        "Occurrence": 1,
+        "EmailType": "Non-Human"
     },
     "syneca.gregory@gmail.com": {
-        "EmailType": "Human",
-        "Occurrence": 1
+        "Occurrence": 1,
+        "EmailType": "Human"
+    },
+    "realtors@bbn.com": {
+        "Occurrence": 1,
+        "EmailType": "Human"
+    },
+    "info@content.linkedin.com": {
+        "Occurrence": 1,
+        "EmailType": "Non-Human"
     }
 }
