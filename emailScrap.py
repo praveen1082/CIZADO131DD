@@ -11,7 +11,7 @@ def check_email(email):
     data = email
     store = data.split("@")
     new_array = store[0].split(".")
-    if len(new_array) < 2:
+    if len(new_array) < 2 or len(new_array[0]) < 6:
         return "Non-Human"
     else:
         return "Human"
