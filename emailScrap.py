@@ -8,13 +8,9 @@ result_data = {}
 
 
 def check_email(email):
-    print("printing from function "+email)
     data = email
     store = data.split("@")
-    print(f"printing data in store {store}")
     new_array = store[0].split(".")
-    print(f"printing data in new_array {new_array}")
-    print(len(new_array))
     if len(new_array) < 2 and len(new_array[0]) < 6:
         return "Non-Human"
     else:
@@ -23,7 +19,8 @@ def check_email(email):
 
 text = """Get 50% off on every purchase. contact marketing team at market@qq.com. Find all your linkedin
     contacts for free, jeff.peterson@b2bsearch.com. qq.com partnership program apply at market@qq.com"""
-text = open("websiteData.txt", encoding="utf-8").read()
+
+# text = open("websiteData.txt", encoding="utf-8").read()
 # Remove the comment from above text if you want to test output with website.txt
 
 for eachData in text.split(" "):
@@ -32,7 +29,6 @@ for eachData in text.split(" "):
 for email in emails:
     occured = emails.count(email)
     email_type = check_email(email)
-    print(email)
     result_data.update({email: {"Occurrence": occured, "EmailType": email_type}})
 
 with open('result.json', 'w') as output:
