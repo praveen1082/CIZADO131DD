@@ -11,7 +11,7 @@ def check_email(email):
     data = email
     store = data.split("@")
     new_array = store[0].split(".")
-    if len(new_array) < 2 and len(new_array[0]) < 6:
+    if len(new_array) < 2 and len(new_array[0]) < 8:
         return "Non-Human"
     else:
         return "Human"
@@ -20,7 +20,7 @@ def check_email(email):
 text = """Get 50% off on every purchase. contact marketing team at market@qq.com. Find all your linkedin
     contacts for free, jeff.peterson@b2bsearch.com. qq.com partnership program apply at market@qq.com"""
 
-# text = open("websiteData.txt", encoding="utf-8").read()
+text = open("websiteData.txt", encoding="utf-8").read()
 # Remove the comment from above text if you want to test output with website.txt
 
 for eachData in text.split(" "):
